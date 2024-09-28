@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1"name="viewport">
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1>Formularios HTML</h1>
+        <form action="forms.html" method="GET">
+            <label for="txtNombre">Nombre</label>
+            <input id="txtNombre" name="txtNombre" type="text" placeholder="Nombre Completo" />
+            <br />            
+            <label for="txtEmail">Correo electronico</label>
+            <input id="txtEmail" name="txtEmail" type="email" placeholder="tucorreo@gmail.com" />            
+            <br />
+            <label for="txtNumber">Número telefónico</label>
+            <input id="txtNumero" name="txtNumero" type="number" placeholder="Numero telefónico" />            
+            <br />            
+            <label for="optTeg">Tegucigalpa</label>
+            <input id="optTeg" name="optCiudad" type="radio" value="TEG">  <!--Para que esten en el mismo grupos los RB deben tener el mismo nombre, de lo contrario funcionaran de forma independiente--> 
+            &nbsp; <!-- nbsp:un espacio-->
+            <label for="optSPS">San Pedro Sula</label>
+            <input id="optSPS" name="optCiudad" type="radio" value="SPS" checked> 
+            &nbsp; 
+            <label for="optSPS">Choluteca</label>
+            <input id="optCHO" name="optCiudad" type="radio" value="CHO"> 
+            &nbsp;        
+            <br />
+            <label for="cmbCiudad">Ciudades 2</label>
+            <select name="cmbCiudad" id="cmbCiudad">
+                <option value="TEG">Tegucigalpa</option>
+                <option value="SPS">San Pedro Sula</option>
+                <option value="CHO" selected>Choluteca</option>
+            </select>
+            <br />
+            <label for="txtLongText">Texto Largo</label>
+            <textarea name="txtBio" id="txtLongText" placeholder="Texto muy muy muy largo"
+            ></textarea> <!--El textarea no debe tener espacios entre etiqueta de apertura de y cierre, de lo contrario generará problemas con el Placeholder-->
+            <button type="submit" name="btnEnviar">Enviar</button>            
+        </form>
+    </body>
+</html>
