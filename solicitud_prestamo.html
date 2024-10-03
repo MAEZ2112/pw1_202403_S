@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Solicitud de prestamo</title>
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+
+        <header>
+            <h1 style="font-style: oblique;" >Solicitud de prestamo </h1>
+            <nav>
+                <p>
+                    Llene la siguiente información para procesar sus datos en la solicitud del prestamo:
+                </p>
+            </nav>
+        </header>
+
+        <main>            
+            <form action="solicitud_prestamo.html" method="GET">
+                <label for="txtNombreCompleto" style="font-style: oblique;">Nombre completo: </label>
+                <input id="txtNombreCompleto" name="txtNombreCompleto" type="text" placeholder="Nombre completo" />
+                <br />
+                <br />
+                <label for="txtEmail" style="font-style: oblique;">Correo electronico: </label>
+                <input id="txtEmail" name="txtEmail" type="email" placeholder="tucorreo@gmail.com" />            
+                <br />
+                <br />
+                <label for="txtNumber" style="font-style: oblique;">Número telefónico: </label>
+                <input id="txtNumero" name="txtNumero" type="number" placeholder="Numero telefónico" />            
+                <br />
+                <br />
+                <label for="txtDireccionActual" style="font-style: oblique;">Dirección: </label>
+                <input id="txtDireccionActual" name="txtDireccionActual" type="text" placeholder="Direccion actual" />
+                <br />
+                <br />
+                <label for="txtCiudad" style="font-style: oblique;">Ciudad: </label>
+                <input id="txtCiudad" name="txtCiudad" type="text" placeholder="Ciudad" />
+                <br />
+                <br />
+                <label for="cmbEstado" style="font-style: oblique;">Estado: </label>
+                <select name="cmbEstado" id="cmbEstado">
+                    <option value="ATL">Atlántida</option>
+                    <option value="CHO" selected>Choluteca</option>
+                    <option value="COL">Colón</option>
+                    <option value="COM">Comayagua</option>
+                    <option value="COP">Copán</option>
+                    <option value="COR">Cortés</option>
+                    <option value="PAR">El Paraíso</option>
+                    <option value="FMO" selected>Francisco Morazán</option>
+                    <option value="GRA">Gracias a Dios</option>
+                    <option value="INT">Intibucá</option>
+                    <option value="IBH">Islas de la Bahía</option>
+                    <option value="PAZ">La Paz</option>
+                    <option value="LEM">Lempira</option>
+                    <option value="OCT">Ocotepeque</option>
+                    <option value="OLA">Olancho</option>
+                    <option value="STB">Santa Bárbara</option>
+                    <option value="VAL">Valle</option>
+                    <option value="YOR">Yoro</option>
+                </select>
+                <br />
+                <br />
+                <label for="txtCodigoPostal" style="font-style: oblique;">Código Postal: </label>
+                <input id="txtCodigoPostal" name="txtCodigoPostal" type="text" placeholder="Código Postal" />
+                <br />
+                <br />
+                <label for="txtNivelEducacion" style="font-style: oblique;">Nivel de educación actual:  </label> 
+                <br />
+                <label for="optPreparatoria">Preparatoria</label>
+                <input id="optPreparatoria" name="optEducacion" type="radio" value="Edu" checked> 
+                <br />
+                <label for="optLicenciatura">Licenciatura</label>
+                <input id="optLicenciatura" name="optEducacion" type="radio" value="Edu"> 
+                <br /> 
+                <label for="optMaestria">Maestría</label>
+                <input id="optMaestria" name="optEducacion" type="radio" value="Edu"> 
+                <br />
+                <label for="optDoctorado">Doctorado</label>
+                <input id="optDoctorado" name="optEducacion" type="radio" value="Edu"> 
+                <br />
+                <br />
+                <label for="txtProgramaEstudio" style="font-style: oblique;">Programa de estudio:  </label>
+                <br /> 
+                <label for="optComputacion">Ciencias de la Computación</label>
+                <input id="optComputacion" name="optProgramaEstudio" type="radio" value="Edu" checked> 
+                <br />
+                <label for="optIngenieria">Ingeniería</label>
+                <input id="optIngenieria" name="optProgramaEstudio" type="radio" value="Edu"> 
+                <br /> 
+                <label for="optEconomia">Economía</label>
+                <input id="optEconomia" name="optProgramaEstudio" type="radio" value="Edu"> 
+                <br />
+                <label for="optArtes">Artes</label>
+                <input id="optArtes" name="optProgramaEstudio" type="radio" value="Edu"> 
+                <br />
+                <label for="optOtro">Otro</label>
+                <input id="optOtro" name="optProgramaEstudio" type="radio" value="Edu"> 
+                <br />
+                <br />
+                <label for="txtPrestamo" style="font-style: oblique;">Monto del préstamo: </label>
+                <input id="txtMonto" name="txtMonto" type="text" placeholder="Monto del préstamo" />
+                <br />
+                <br />
+                <label for="txtRazonPrestamo" style="font-style: oblique;">Razón del préstamo</label>
+                <textarea name="txtRazonPrestamo" id="txtRazonPrestamo" placeholder="Describa la razón del préstamo"
+                ></textarea>
+                <br />
+                <br />
+                <button type="submit" name="btnEnviarSolicitud">Enviar</button>
+            </form>
+        </main>
+    </body>
+</html>
