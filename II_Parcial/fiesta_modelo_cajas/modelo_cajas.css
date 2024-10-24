@@ -21,6 +21,7 @@ header h1
 
 header nav ul
 {         
+    font-size: larger;
     display: flex;
     list-style: none;    
     margin-left: 52rem;
@@ -77,6 +78,7 @@ main h2
 
 .hero-content 
 {
+    font-size: xx-large;
     font-style: oblique;
     position: absolute;
     top: 30%;
